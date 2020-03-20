@@ -1,28 +1,28 @@
 {
-  "_from": "cordova-plugin-admobpro",
+  "_from": "cordova-plugin-admobpro@~2.37.2",
   "_id": "cordova-plugin-admobpro@2.37.2",
   "_inBundle": false,
   "_integrity": "sha512-/sshroXqqU2wvgMjzBBiW9iGb0WVsN/SVh2gzU8DeEsLl72ZUM0qHrnJEst/1KiMin3A7kU7byti7jwL9Wkcxw==",
   "_location": "/cordova-plugin-admobpro",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "range",
     "registry": true,
-    "raw": "cordova-plugin-admobpro",
+    "raw": "cordova-plugin-admobpro@~2.37.2",
     "name": "cordova-plugin-admobpro",
     "escapedName": "cordova-plugin-admobpro",
-    "rawSpec": "",
+    "rawSpec": "~2.37.2",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "~2.37.2"
   },
   "_requiredBy": [
-    "#USER",
-    "/"
+    "#DEV:/",
+    "#USER"
   ],
   "_resolved": "https://registry.npmjs.org/cordova-plugin-admobpro/-/cordova-plugin-admobpro-2.37.2.tgz",
   "_shasum": "e4860c5fcc1fe761adaf5dde29b27afd63699f41",
-  "_spec": "cordova-plugin-admobpro",
-  "_where": "C:\\Users\\cristina.navarro\\cosas\\mis deberes\\mis deberes\\proyecto cordova\\y",
+  "_spec": "cordova-plugin-admobpro@~2.37.2",
+  "_where": "C:\\cris\\mis deberes\\mis_deberes-master",
   "author": {
     "name": "Liming Xie"
   },

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.apperse.misdeberes" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.apperse.covifestacion" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <preference name="loglevel" value="DEBUG" />
     <feature name="BackgroundPlugin">
         <param name="android-package" value="org.chromium.BackgroundPlugin" />
@@ -23,6 +23,7 @@
         <param name="android-package" value="org.chromium.ChromeNavigation" />
         <param name="onload" value="true" />
     </feature>
+	<preference name="android-targetSdkVersion" value="28" />
     <preference name="webView" value="org.crosswalk.engine.XWalkWebViewEngine" />
     <preference default="19+" name="xwalkVersion" />
     <preference default="xwalk_core_library_canary:17+" name="xwalkLiteVersion" />
@@ -62,14 +63,13 @@
     <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect" />
     <preference name="xwalkMode" value="embedded" />
     <preference name="xwalkMultipleApk" value="true" />
-    <access launch-external="yes" origin="*" />
-    <allow-intent href="http://code.jquery.com/*" />
-    <allow-intent href="https://code.jquery.com/*" />
-    <allow-intent href="https://www.gstatic.com/*" />
-    <allow-intent href="https://mis-deberes.firebaseio.com/*" />
-    <allow-intent href="https://mis-deberes.appspot.com/*" />
-    <allow-intent href="https://mis-deberes.firebaseapp.com/*" />
-    <allow-intent href="https://github.com/CrisNaDeveloper/mis_deberes/*" />
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
     <feature name="AdMob">
         <param name="android-package" value="com.rjfun.cordova.admob.AdMobPlugin" />
         <param name="onload" value="true" />
@@ -93,7 +93,7 @@
     <splash density="port-xxhdpi" src="www/res/screen/android/drawable-port-xxhdpi-screen.png" />
     <splash density="port-xxxhdpi" src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" />
     <allow-intent href="market:*" />
-    <name>misdeberes</name>
+    <name>covifestacion</name>
     <description>
         Hello World sample application that responds to the deviceready event.
     </description>
@@ -106,11 +106,5 @@
     <preference name="AndroidPersistentFileLocation" value="Compatibility" />
     <preference name="android-build-tool" value="gradle" />
     <preference name="phonegap-version" value="cli-7.1.0" />
-    <access origin="*" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
+
 </widget>

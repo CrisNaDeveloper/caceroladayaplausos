@@ -1,0 +1,88 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-play-services-version-adapter": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-admobpro": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-contacts": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-device-motion": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-device-orientation": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-globalization": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-media": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-extension": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-admobsdk": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-compat": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.apperse.covifestacion"
+    }
+  }
+}

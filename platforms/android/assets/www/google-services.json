@@ -1,10 +1,5 @@
 {
-  "project_info": {
-    "project_number": "616346485951",
-    "firebase_url": "https://mis-deberes.firebaseio.com",
-    "project_id": "mis-deberes",
-    "storage_bucket": "mis-deberes.appspot.com"
-  },
+  
   "client": [
     {
       "client_info": {
@@ -39,7 +34,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:616346485951:android:52002f5c4e758799",
         "android_client_info": {
-          "package_name": "com.misdeberes.com"
+          "package_name": "com.covifestacion.com"
         }
       },
       "oauth_client": [

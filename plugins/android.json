@@ -7,68 +7,80 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-background-app": {
-      "PACKAGE_NAME": "com.apperse.misdeberes"
-    },
-    "cordova-plugin-blob-constructor-polyfill": {
-      "PACKAGE_NAME": "com.apperse.misdeberes"
-    },
-    "cordova-plugin-chrome-apps-bootstrap": {
-      "PACKAGE_NAME": "com.apperse.misdeberes"
-    },
-    "cordova-plugin-chrome-apps-common": {
-      "PACKAGE_NAME": "com.apperse.misdeberes"
-    },
-    "cordova-plugin-chrome-apps-i18n": {
-      "PACKAGE_NAME": "com.apperse.misdeberes"
-    },
-    "cordova-plugin-chrome-apps-navigation": {
-      "PACKAGE_NAME": "com.apperse.misdeberes"
-    },
-    "cordova-plugin-chrome-apps-runtime": {
-      "PACKAGE_NAME": "com.apperse.misdeberes"
-    },
-    "cordova-plugin-chrome-apps-storage": {
-      "PACKAGE_NAME": "com.apperse.misdeberes"
-    },
-    "cordova-plugin-crosswalk-webview": {
-      "PACKAGE_NAME": "com.apperse.misdeberes"
-    },
-    "cordova-plugin-customevent-polyfill": {
-      "PACKAGE_NAME": "com.apperse.misdeberes"
-    },
-    "cordova-plugin-inappbrowser": {
-      "PACKAGE_NAME": "com.apperse.misdeberes"
-    },
-    "cordova-plugin-network-information": {
-      "PACKAGE_NAME": "com.apperse.misdeberes"
-    },
-    "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "com.apperse.misdeberes"
-    },
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "com.apperse.misdeberes"
-    },
-    "cordova-plugin-xhr-blob-polyfill": {
-      "PACKAGE_NAME": "com.apperse.misdeberes"
-    },
-    "org.chromium.cca-hooks": {
-      "PACKAGE_NAME": "com.apperse.misdeberes"
-    },
-    "cordova-play-services-version-adapter": {
-      "PACKAGE_NAME": "com.apperse.misdeberes"
-    },
-    "cordova-support-google-services": {
-      "PACKAGE_NAME": "com.your.company.misdeberes"
-    },
     "cordova-plugin-admobpro": {
       "PLAY_SERVICES_VERSION": "16.0.0",
-      "PACKAGE_NAME": "com.your.company.misdeberes"
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-battery-status": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-console": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-contacts": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-device": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-device-motion": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-device-orientation": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-dialogs": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-geolocation": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-globalization": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-media": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-media-capture": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-vibration": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-play-services-version-adapter": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
     }
   },
   "dependent_plugins": {
+    "cordova-admobsdk": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
     "cordova-plugin-extension": {
-      "PACKAGE_NAME": "com.your.company.misdeberes"
+      "PACKAGE_NAME": "com.phonegap.helloworld"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.phonegap.helloworld"
     }
   }
 }
