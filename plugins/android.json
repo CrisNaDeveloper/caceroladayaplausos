@@ -1,0 +1,74 @@
+{
+  "prepare_queue": {
+    "installed": [],
+    "uninstalled": []
+  },
+  "config_munge": {
+    "files": {}
+  },
+  "installed_plugins": {
+    "cordova-plugin-background-app": {
+      "PACKAGE_NAME": "com.apperse.misdeberes"
+    },
+    "cordova-plugin-blob-constructor-polyfill": {
+      "PACKAGE_NAME": "com.apperse.misdeberes"
+    },
+    "cordova-plugin-chrome-apps-bootstrap": {
+      "PACKAGE_NAME": "com.apperse.misdeberes"
+    },
+    "cordova-plugin-chrome-apps-common": {
+      "PACKAGE_NAME": "com.apperse.misdeberes"
+    },
+    "cordova-plugin-chrome-apps-i18n": {
+      "PACKAGE_NAME": "com.apperse.misdeberes"
+    },
+    "cordova-plugin-chrome-apps-navigation": {
+      "PACKAGE_NAME": "com.apperse.misdeberes"
+    },
+    "cordova-plugin-chrome-apps-runtime": {
+      "PACKAGE_NAME": "com.apperse.misdeberes"
+    },
+    "cordova-plugin-chrome-apps-storage": {
+      "PACKAGE_NAME": "com.apperse.misdeberes"
+    },
+    "cordova-plugin-crosswalk-webview": {
+      "PACKAGE_NAME": "com.apperse.misdeberes"
+    },
+    "cordova-plugin-customevent-polyfill": {
+      "PACKAGE_NAME": "com.apperse.misdeberes"
+    },
+    "cordova-plugin-inappbrowser": {
+      "PACKAGE_NAME": "com.apperse.misdeberes"
+    },
+    "cordova-plugin-network-information": {
+      "PACKAGE_NAME": "com.apperse.misdeberes"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.apperse.misdeberes"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.apperse.misdeberes"
+    },
+    "cordova-plugin-xhr-blob-polyfill": {
+      "PACKAGE_NAME": "com.apperse.misdeberes"
+    },
+    "org.chromium.cca-hooks": {
+      "PACKAGE_NAME": "com.apperse.misdeberes"
+    },
+    "cordova-play-services-version-adapter": {
+      "PACKAGE_NAME": "com.apperse.misdeberes"
+    },
+    "cordova-support-google-services": {
+      "PACKAGE_NAME": "com.your.company.misdeberes"
+    },
+    "cordova-plugin-admobpro": {
+      "PLAY_SERVICES_VERSION": "16.0.0",
+      "PACKAGE_NAME": "com.your.company.misdeberes"
+    }
+  },
+  "dependent_plugins": {
+    "cordova-plugin-extension": {
+      "PACKAGE_NAME": "com.your.company.misdeberes"
+    }
+  }
+}
