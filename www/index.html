@@ -4,8 +4,9 @@
 
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"/>
-
+<meta http-equiv="Access-Control-Allow-Origin" content="*">
+<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline';  media-src *;img-src * 'self' data: https:;"
+/>
 <head>
 
 
@@ -48,11 +49,11 @@
                     </div>
 
                     <a class="carousel-control-prev" href="#carouselExampleControls" data-role="button" data-slide="prev" data-icon="carat-l">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"><<</span>
+                        <span class="carousel-control-prev-icon" ><<</span>
                         <span class="sr-only">Anterior</span>
                     </a>
                     <a class="carousel-control-next" href="#carouselExampleControls" data-role="button" data-slide="next" data-icon="carat-r">
-                        <span class="carousel-control-next-icon" aria-hidden="true">>></span>
+                        <span class="carousel-control-next-icon" >>></span>
                         <span class="sr-only">Siguiente</span>
                     </a>
 
@@ -65,7 +66,7 @@
             <div class="ui-navbar" role="navigation" data-role="navbar" data-theme="a" data-mini="true">
                 <ul class="ui-grid-d">
                     <li class="ui-block-b">
-                        <a href="#" id="botonSonido" data-role="button" data-transition="flip" data-icon="power">play</a>
+                        <a href="#" id="botonSonido" data-theme="a" data-role="button" data-transition="flip" data-icon="power">play</a>
                     </li>
 
                 </ul>
