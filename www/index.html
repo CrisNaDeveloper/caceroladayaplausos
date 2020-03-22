@@ -11,13 +11,13 @@
 
 
    <script type="text/javascript" src="cordova.js"></script> 
-    <script type="text/javascript" src="js/index.js"></script>
+<!--     <script type="text/javascript" src="js/index.js"></script> -->
     <link rel="stylesheet" type="text/css" href="css/covifestacion.css" />
     <link rel="stylesheet" type="text/css" href="css/covifestacion.min.css" />
 
 
 <!--  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />  -->
-    <!-- <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.4.5//jquery.mobile.icons-1.4.5.min.css" />  -->
+    <!-- <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.icons-1.4.5.min.css" />  -->
     <link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
     <link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5/jquery.mobile.icons-1.4.5.min.css" /> 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -67,12 +67,18 @@
         <div data-role="footer" data-theme="a" data-position="fixed">
 
             <div class="ui-navbar" data-role="navbar" data-theme="a" data-mini="true">
-                <ul class="ui-grid-d">
+
+                    <form>
+
+                              <input type="checkbox" id="botonSonido" data-role="flipswitch" name="flip-checkbox-1" id="flip-checkbox-1">
+                            </form>
+                
+            <!--     <ul class="ui-grid-d">
                     <li class="ui-block-b">
                         <a href="#" id="botonSonido" data-theme="a" role="button" data-transition="flip" data-icon="power">play</a>
                     </li>
 
-                </ul>
+                </ul> -->
             </div>
         </div>
     
@@ -85,7 +91,7 @@
 	<script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/anuncio.js"></script>
 
     <script type="text/javascript">
         var sonidoActivo = false;
@@ -105,7 +111,7 @@
             $(".carousel-control-next").click(function () {
                 $("#carrusel").carousel("next");
             });
-            $('#botonSonido').click(function () {
+            $('#botonSonido').change(function () {
                 if (sonidoActivo) {
 /*                      $('#botonSonido').attr("src", "img/Sound-on-icon.png"); */
                     document.getElementById(sonidos[imagen]).pause();
@@ -125,6 +131,8 @@
                 }
             });
         });
+
+
     </script>
 </body>
 

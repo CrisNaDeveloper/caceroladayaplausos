@@ -3,6 +3,14 @@
     <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
     <uses-permission android:name="android.permission.INTERNET" />
     <application android:hardwareAccelerated="true" android:icon="@drawable/icon" android:label="@string/app_name" android:supportsRtl="true">
+
+    <application>
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.covifestacion"
+            android:value="ca-app-pub-2512504278709047~5139105172"/>
+   
+
 	<meta-data
             android:name="com.apperse.covifestacion"
             android:value="ca-app-pub-2512504278709047/8783949487"/>
