@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <style>
+	.contenedor{
+		width: 500px;
+		height: 500px;
+	}
+  </style>
+</head>
+<body>
+<h1>Prueba de carrusel</h1>
+<div>
+	<img id="botonSonido" src="Sound-on-icon.png"/>
+</div>
+<div id="carrusel" class="carousel slide contenedor">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="aplauso.png" class="d-block w-100 imagen" alt="Aplauso">
+    </div>
+    <div class="carousel-item">
+      <img src="cazuela.png" class="d-block w-100 imagen" alt="Cazuela">
+    </div>
+    <div class="carousel-item">
+      <img src="bocina.png" class="d-block w-100 imagen" alt="Bocina">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Siguiente</span>
+  </a>  
+</div>
+<audio id="sonidoAplauso" preload="auto" loop autoplay>
+	<source src="aplauso.mp3" type="audio/mpeg">
+</audio>
+<audio id="sonidoCazuela" preload="auto" loop>
+	<source src="cazuela.mp3" type="audio/mpeg">
+</audio>
+<audio id="sonidoBocina" preload="auto" loop>
+	<source src="bocina.mp3" type="audio/mpeg">
+</audio>
+
+<script src="jquery-3.4.1.slim.min.js"></script>
+<script src="popper.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script type="text/javascript">
+	var sonidoActivo=false;
+	var imagen=0;
+	var sonidos=["sonidoAplauso","sonidoCazuela","sonidoBocina"];
+	$(document).ready(function(){
+		$("#carrusel").carousel({interval:false});
+		$(".carousel-control-prev").click(function(){
+			$("#carrusel").carousel("prev");
+		});
+		$(".carousel-control-next").click(function(){
+			$("#carrusel").carousel("next");
+		});
+		$('#botonSonido').click(function(){
+			if(sonidoActivo){
+				$('#botonSonido').attr("src","Sound-on-icon.png");
+				document.getElementById(sonidos[imagen]).pause();
+			}else{
+				$('#botonSonido').attr("src","Sound-off-icon.png");
+				document.getElementById(sonidos[imagen]).play();
+			}
+			sonidoActivo=!sonidoActivo;
+		});
+		$('#carrusel').on('slide.bs.carousel', function (event) {
+			if(sonidoActivo){
+				document.getElementById(sonidos[imagen]).pause();
+			}
+			imagen=event.to;
+			if(sonidoActivo){
+				document.getElementById(sonidos[imagen]).play();
+			}
+		});  
+	});
+</script>
+</body>
