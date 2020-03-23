@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-open-admob" version="1.0.0-facebook">
+  <description>Google AdMob Ads plugin for Cordova, Phonegap, Ionic/Angular and Intel XDK. Monetize your app with one javascript line. Android SDK v7.5, iOS SDK v7.3.1. Auto-detect internet connection.</description>
+  <name>AdMob Google Ads</name>
+  <author email="hoelt@fovea.cc" href="https://github.com/j3k0/admob-google-cordova">AppFeel</author>
+  <license>MIT</license>
+  <keywords>ad,ads,admob,google,advertising,advertisment,publicity,earn,win,play,services,iad,flurry,monetization,money,appfeel</keywords>
+  <repo>https://github.com/j3k0/admob-google-cordova.git</repo>
+  <issue>https://github.com/j3k0/admob-google-cordova/issues</issue>
+
+  <engines>
+    <engine name="cordova" version=">=4.0.0" />
+  </engines>
+
+  <!-- dependency id="cordova-connectivity-monitor" / -->
+  <!-- dependency id="cordova-play-services-version-adapter" / -->
+  <!-- dependency id="cordova-plugin-cocoapod-support"/ -->
+
+  <js-module src="www/admob.js" name="AdMobAds">
+    <clobbers target="window.admob" />
+  </js-module>
+
+  <hook type="after_plugin_add" src="scripts/100-prepare-admob-angular.js" />
+  <asset src="www/angular-admob.js" target="lib/angular-admob/angular-admob.js" />
+
+  <!-- android -->
+  <platform name="android">
+    <config-file target="res/xml/config.xml" parent="/*">
+      <feature name="AdMobAds">
+        <param name="android-package" value="cc.fovea.admob.AdMobAds" />
+      </feature>
+    </config-file>
+
+    <config-file target="AndroidManifest.xml" parent="/manifest/application">
+      <activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:theme="@android:style/Theme.Translucent" />
+    </config-file>
+
+    <config-file target="AndroidManifest.xml" parent="/*">
+      <uses-permission android:name="android.permission.INTERNET" />
+      <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    </config-file>
+
+    <!-- Add facebook audience network caching.
+    https://developers.facebook.com/docs/audience-network/android-network-security-config -->
+    <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+      <application android:networkSecurityConfig="@xml/admob_network_security_config" />
+    </edit-config>
+    <source-file src="src/android/res/xml/admob_network_security_config.xml" target-dir="res/xml" />
+
+    <framework src="com.google.android.gms:play-services-ads:18.3.0" />
+    <framework src="com.google.ads.mediation:facebook:5.7.0.0" />
+
+    <!-- mediation test suite -->
+    <!-- framework src="com.google.android.ads:mediation-test-suite:1.3.0" / -->
+
+    <source-file src="src/android/AdMobAds.java" target-dir="src/cc/fovea/admob" />
+    <source-file src="src/android/AdMobAdsAdListener.java" target-dir="src/cc/fovea/admob" />
+    <source-file src="src/android/AdMobAdsRewardedAdListener.java" target-dir="src/cc/fovea/admob" />
+    <source-file src="src/android/Connectivity.java" target-dir="src/cc/fovea/admob" />
+    <source-file src="src/android/CPConnectivity.java" target-dir="src/cc/fovea/admob" />
+    <source-file src="src/android/res/xml/admob.xml" target-dir="res/xml" />
+  </platform>
+
+  <!-- ios -->
+  <platform name="ios">
+    <config-file target="config.xml" parent="/*">
+      <feature name="AdMobAds">
+        <param name="ios-package" value="CDVAdMobAds" />
+      </feature>
+    </config-file>
+
+    <config-file target="*-Info.plist" parent="NSAppTransportSecurity">
+      <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+      </dict>
+    </config-file>
+
+    <header-file src="src/ios/CDVAdMobAds.h" />
+    <source-file src="src/ios/CDVAdMobAds.m" />
+    <header-file src="src/ios/CDVAdMobAdsAdListener.h" />
+    <source-file src="src/ios/CDVAdMobAdsAdListener.m" />
+    <header-file src="src/ios/CDVAdMobAdsRewardedAdListener.h" />
+    <source-file src="src/ios/CDVAdMobAdsRewardedAdListener.m" />
+    <header-file src="src/ios/AppFeelReachability.h" />
+    <source-file src="src/ios/AppFeelReachability.m" />
+    <!-- header-file src="src/ios/CDVAppFeelReachability.h" />
+    <source-file src="src/ios/CDVAppFeelReachability.m" / -->
+
+    <!-- Frameworks -->
+    <podspec>
+      <config>
+        <source url="https://github.com/CocoaPods/Specs.git"/>
+      </config>
+      <pods use-frameworks="true">
+        <pod name="Google-Mobile-Ads-SDK" />
+        <pod name="GoogleMobileAdsMediationMoPub" />
+        <pod name="GoogleMobileAdsMediationFacebook" />
+      </pods>
+    </podspec>
+    
+    <!--config-file target="*-Info.plist" parent="CFBundleURLTypes">
+      <array>
+        <dict>
+          <key>bid</key>
+          <string>ca-app-pub-8440343014846849/2335511010</string>
+        </dict>
+        <dict>
+          <key>iid</key>
+          <string>ca-app-pub-8440343014846849/3812244218</string>
+        </dict>
+      </array>
+    </config-file-->
+  </platform>
+</plugin>

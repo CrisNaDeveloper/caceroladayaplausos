@@ -200,5 +200,13 @@
     },
     "is_top_level": false,
     "variables": {}
+  },
+  "cordova-open-admob": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-open-admob"
+    },
+    "is_top_level": true,
+    "variables": {}
   }
 }

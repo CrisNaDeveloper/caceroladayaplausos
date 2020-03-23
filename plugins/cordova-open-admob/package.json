@@ -1,0 +1,76 @@
+{
+  "_from": "cordova-open-admob",
+  "_id": "cordova-open-admob@1.0.0-facebook",
+  "_inBundle": false,
+  "_integrity": "sha512-cYytqnWXsdzbRk9zSavkxzuHJTAkBBGpKa0srHvMSyZjytY4Ib3iNYBxgsL/yV6cOO5W1jH5h8vUT98WnOxs+g==",
+  "_location": "/cordova-open-admob",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "cordova-open-admob",
+    "name": "cordova-open-admob",
+    "escapedName": "cordova-open-admob",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-open-admob/-/cordova-open-admob-1.0.0-facebook.tgz",
+  "_shasum": "39671cb2d7373960c76ada87fb2732143673c10a",
+  "_spec": "cordova-open-admob",
+  "_where": "C:\\Users\\cristina.navarro\\cosas\\covifestacion\\covifestacion",
+  "author": {
+    "name": "AppFeel"
+  },
+  "bugs": {
+    "url": "https://github.com/j3k0/admob-google-cordova/issues"
+  },
+  "bundleDependencies": false,
+  "cordova": {
+    "id": "cordova-open-admob",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "dependencies": {
+    "q": "^1.5.1"
+  },
+  "deprecated": false,
+  "description": "Google AdMob Ads plugin for Cordova, Phonegap, Ionic/Angular and Intel XDK. Monetize your app with one javascript line. Android SDK v7.5, iOS SDK v7.3.1. Auto-detect internet connection.",
+  "engines": {
+    "name": "cordova",
+    "version": ">=4.0.0"
+  },
+  "homepage": "https://github.com/j3k0/admob-google-cordova/",
+  "keywords": [
+    "ad",
+    "ads",
+    "admob",
+    "google",
+    "advertising",
+    "advertisment",
+    "publicity",
+    "earn",
+    "win",
+    "play",
+    "services",
+    "iad",
+    "flurry",
+    "monetization",
+    "money",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "license": "MIT",
+  "name": "cordova-open-admob",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j3k0/admob-google-cordova.git"
+  },
+  "version": "1.0.0-facebook"
+}

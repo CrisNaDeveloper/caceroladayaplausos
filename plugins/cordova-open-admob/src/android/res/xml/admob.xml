@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+  <string name="bid">ca-app-pub-BID</string>
+  <string name="iid">ca-app-pub-IID</string>
+  <string name="rid">ca-app-pub-RID</string>
+</resources>
