@@ -4,6 +4,7 @@
 
 
 <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Access-Control-Allow-Origin" content="*">
 <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline';  media-src *;img-src * 'self' data: https:;" />
 
@@ -98,7 +99,7 @@
         var sonidos = ["sonidoAplauso", "sonidoCacerola"];
 
         $(document).load(function() {
-            document.getElementById(sonidos[imagen]).play();
+            document.getElementById(sonidos["sonidoAplauso"]).play();
 
         });
 
