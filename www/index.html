@@ -5,25 +5,25 @@
 
 <meta charset="utf-8" />
 <meta http-equiv="Access-Control-Allow-Origin" content="*">
-<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline';  media-src *;img-src * 'self' data: https:;"
-/>
+<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline';  media-src *;img-src * 'self' data: https:;" />
+
 <head>
 
 
-   <script type="text/javascript" src="cordova.js"></script> 
-<!--     <script type="text/javascript" src="js/index.js"></script> -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <!--     <script type="text/javascript" src="js/index.js"></script> -->
     <link rel="stylesheet" type="text/css" href="css/caceroladayaplausos.css" />
     <link rel="stylesheet" type="text/css" href="css/caceroladayaplausos.min.css" />
 
 
-<!--  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />  -->
+    <!--  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />  -->
     <!-- <link rel="stylesheet" type="text/css" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.icons-1.4.5.min.css" />  -->
-    <link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5/jquery.mobile.structure-1.4.5.min.css" /> 
-    <link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5/jquery.mobile.icons-1.4.5.min.css" /> 
+    <link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <link rel="stylesheet" type="text/css" href="jquery.mobile-1.4.5/jquery.mobile.icons-1.4.5.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
 </head>
 
-<body >
+<body>
 
     <audio id="sonidoCacerola" preload loop>
         <source src="audio/cacerolazo.mp3" type="audio/mpeg">
@@ -34,9 +34,26 @@
         <source src="audio/aplauso.mp3" type="audio/mpeg" />
         <!--source src="audio/aplausos.ogg" type="audio/ogg"-->
     </audio>
-   <div data-role="page" id="contenido" data-theme="a">
-        <div data-role="header" data-theme="a">Cacerolada y Aplausos</div>
-        <div data-role="content" data-theme="a"> 
+    <div data-role="page" id="contenido" data-theme="a">
+        <div data-role="header" data-theme="a">Cacerolada y Aplausos
+
+            <div class="ui-navbar" data-role="navbar" data-theme="a" data-mini="true">
+
+                <form>
+
+                    <input type="checkbox" id="botonSonido" data-role="flipswitch" name="flip-checkbox-1" id="flip-checkbox-1">
+                </form>
+
+                <!--     <ul class="ui-grid-d">
+                <li class="ui-block-b">
+                    <a href="#" id="botonSonido" data-theme="a" role="button" data-transition="flip" data-icon="power">play</a>
+                </li>
+
+            </ul> -->
+            </div>
+
+        </div>
+        <div data-role="content" data-theme="a">
 
 
 
@@ -64,31 +81,14 @@
             </div>
 
 
-        <div data-role="footer" data-theme="a" data-position="fixed">
 
-            <div class="ui-navbar" data-role="navbar" data-theme="a" data-mini="true">
 
-                    <form>
-
-                              <input type="checkbox" id="botonSonido" data-role="flipswitch" name="flip-checkbox-1" id="flip-checkbox-1">
-                            </form>
-                
-            <!--     <ul class="ui-grid-d">
-                    <li class="ui-block-b">
-                        <a href="#" id="botonSonido" data-theme="a" role="button" data-transition="flip" data-icon="power">play</a>
-                    </li>
-
-                </ul> -->
-            </div>
         </div>
-    
+    </div>
 
-</div>
-    </div> 
 
-  
-	<script src="js/jquery-1.10.2.min.js"></script>
-	<script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="jquery.mobile-1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/anuncio.js"></script>
@@ -98,30 +98,32 @@
         var imagen = 0;
         var sonidos = ["sonidoAplauso", "sonidoCacerola"];
 
-        $(document).load(function () {
-           document.getElementById(sonidos[imagen]).play();
+        $(document).load(function() {
+            document.getElementById(sonidos[imagen]).play();
 
         });
 
-        $(document).ready(function () {
-            $("#carrusel").carousel({ interval: false });
-            $(".carousel-control-prev").click(function () {
+        $(document).ready(function() {
+            $("#carrusel").carousel({
+                interval: false
+            });
+            $(".carousel-control-prev").click(function() {
                 $("#carrusel").carousel("prev");
             });
-            $(".carousel-control-next").click(function () {
+            $(".carousel-control-next").click(function() {
                 $("#carrusel").carousel("next");
             });
-            $('#botonSonido').change(function () {
+            $('#botonSonido').change(function() {
                 if (sonidoActivo) {
-/*                      $('#botonSonido').attr("src", "img/Sound-on-icon.png"); */
+                    /*                      $('#botonSonido').attr("src", "img/Sound-on-icon.png"); */
                     document.getElementById(sonidos[imagen]).pause();
                 } else {
-            /*           $('#botonSonido').attr("src", "img/Sound-off-icon.png"); */
+                    /*           $('#botonSonido').attr("src", "img/Sound-off-icon.png"); */
                     document.getElementById(sonidos[imagen]).play();
                 }
                 sonidoActivo = !sonidoActivo;
             });
-            $('#carrusel').on('slide.bs.carousel', function (event) {
+            $('#carrusel').on('slide.bs.carousel', function(event) {
                 if (sonidoActivo) {
                     document.getElementById(sonidos[imagen]).pause();
                 }
@@ -132,7 +134,9 @@
             });
         });
 
-  admob.createBannerView({publisherId: "ca-app-pub-2512504278709047/5225615528"});
+        admob.createBannerView({
+            publisherId: "ca-app-pub-2512504278709047/5225615528"
+        });
     </script>
 </body>
 
